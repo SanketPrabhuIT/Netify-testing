@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Feedback Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list class="feedback-form">
+    <!-- <h1>Feedback Form</h1> -->
+    <ion-item>
+      <ion-label position="stacked">Full Name</ion-label>
+      <ion-input [(ngModel)]="name" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Phone Number</ion-label>
+      <ion-input [(ngModel)]="number" type="tel"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Gender</ion-label>
+      <ion-select [(ngModel)]="gender">
+        <ion-select-option value="male">Male</ion-select-option>
+        <ion-select-option value="female">Female</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Feedback</ion-label>
+      <ion-textarea [(ngModel)]="feedback" rows="6"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" class="submit-button" (click)="submit()">Submit</ion-button>
+</ion-content>

@@ -1,17 +1,52 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
-    </ion-title>
+Jahangir Art Gallery    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="hero-img">
+    <img src="https://cdn.britannica.com/22/171322-120-C679E46F/Entrance-hall-Egyptian-Museum-Cairo.jpg" alt="Home Image"/>
+  </div>
+  <ion-toolbar>
+    <ion-title>
+Fasten Your SeatBelt To Explore The Depth Of Ancient Art History!    </ion-title>
+  </ion-toolbar>
+  <ion-grid class="history-grid">
+    <ion-row size="20">
+      <ion-col size="6">
+        <ion-card routerLink="/card1" class="history-card">
+          <ion-card-content>
+            <ion-label>Antiquities Gallery</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+      <ion-col size="6">
+        <ion-card routerLink="/card2" class="history-card">
+          <ion-card-content>
+            <ion-label>Middle Ages Exhibition</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row size="15">
+      <ion-col size="6">
+        <ion-card routerLink="/card3" class="history-card">
+          <ion-card-content>
+            <ion-label>Contemporary Narratives</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card routerLink="/card4" class="history-card">
+          <ion-card-content>
+            <ion-label>Artistic Evolution Collection</ion-label>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
